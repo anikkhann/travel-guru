@@ -3,13 +3,13 @@ import { Link, useParams } from 'react-router-dom';
 import Header from '../Header/Header';
 import fakeData from '../../fakeData/index';
 import { Form } from 'react-bootstrap';
-import { Button, Card } from '@material-ui/core';
+import { Button} from '@material-ui/core';
 
 const Book = () => {
     const { travelId } = useParams();
     const bookData = fakeData.find(data => data.id === travelId);
     console.log(bookData);
-    const { name, description, origin, destination } = bookData;
+    const { name, description, origin, destination, id } = bookData;
 
     return (
         <div className="home-image">
@@ -54,7 +54,8 @@ const Book = () => {
                               
                             </Form.Group>
                             <div className=" d-flex justify-content-center" style={{fontWeight:'bold', borderRadius:'10px' ,backgroundColor:'#ffc107'}}>
-                         <Link to="/">  <Button>
+                         <Link to={`/destination/${id}`}>  
+                            <Button>
                                 <p>Start Booking</p>
                             </Button>
                         </Link>
