@@ -13,7 +13,11 @@ import Destination from './Components/Destination/Destination';
 
 export const UserContext = createContext();
 function App() {
-  const [loggedInUser , setLoggedInUser] = useState({})
+  const [loggedInUser , setLoggedInUser] = useState({
+    name: '',
+    email: '',
+    password:'',
+  });
   
   return (
     <UserContext.Provider value={[loggedInUser, setLoggedInUser]}>

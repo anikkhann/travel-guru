@@ -9,7 +9,7 @@ const Book = () => {
     const { travelId } = useParams();
     const bookData = fakeData.find(data => data.id === travelId);
     console.log(bookData);
-    const { name, description, origin, destination, id } = bookData;
+    const {name, description, origin, destination, id } = bookData;
 
     return (
         <div className="home-image">
