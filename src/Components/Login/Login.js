@@ -174,7 +174,7 @@ const Login = () => {
                 
 
                 <div className="container">
-                <div className="row justify-content-center" style={{marginTop:'120px', marginLeft:'325px', backgroundColor:'white', border:'1px solid white', borderRadius:'10px', height:'225px', width:'500px'}}>
+                <div className="row justify-content-center" style={{marginTop:'120px', marginLeft:'325px', backgroundColor:'white', border:'1px solid white', borderRadius:'10px', height:'340px', width:'500px'}}>
                 <div col-md-6>
                 <Form onSubmit={handleSubmit} style={{width: '250px', color:'gray'}}>
 
@@ -195,7 +195,11 @@ const Login = () => {
                         <Form.Label>Password</Form.Label>
                         <Form.Control type="password" name="password" onBlur={handleBlur} placeholder="Password" required/>
                     </FormGroup>   
-                    <input  style={{marginLeft:'75px', fontWeight:'border', backgroundColor:'#ffc107'}} value="Submit" type="submit"/>
+                    <br/>
+                    
+                        <input  style={{marginLeft:'75px', fontWeight:'border', backgroundColor:'#ffc107'}} value="Submit" type="submit"/>
+                    
+                    
                  
                 </Form>
                 
